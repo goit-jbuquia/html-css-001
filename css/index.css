@@ -1,0 +1,271 @@
+:root {
+    --color-white: #FFF;
+    --color-black: #000;
+    --color-orange: #FF6C00;
+    --color-light-gray: #F5F4FA;
+    --color-light-gray-2: #F7F7F7;
+    --color-gray: #9DA4BD;
+
+    --font-family-raleway: 'Raleway', sans-serif;
+    --font-family-open-sans: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: var(--color-black); */
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    display: block;
+}
+
+.main-header-container {
+    display: flex;
+    width: 1200px;
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.main-header-nav {
+    display: flex;
+}
+
+.main-header-menu {
+    display: inline-block;
+    margin-left: 130px;
+    margin-top: auto;
+    margin-bottom: auto;
+    column-gap: 40px;
+}
+
+.main-header-logo {
+    text-decoration: none;
+}
+
+.main-header-menu-link,
+.main-header-menu-tel {
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black);
+    font-size: 12px;
+}
+
+.main-header-menu-link:hover,
+.main-header-menu-tel:hover {
+    color: var(--color-orange);
+}
+
+.main-header-menu-item {
+    display: inline-block;
+}
+
+.main-header-menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+
+.main-header-menu-link.active {
+    color: var(--color-orange);
+}
+
+.main-header-cta {
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 10px;
+    line-height: 1.5em;
+    background-color: transparent;
+    border: 1px solid var(--color-orange);
+}
+
+.main-header-ctas {
+    display: inline-flex;
+    padding-left: 0;
+    margin-left: auto;
+    column-gap: 40px;
+}
+
+.main-header-ctas-item {
+    display: inline-block;
+}
+
+.hero.section {
+    background-image: url('../images/hero-image.jpg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100%;
+    padding-top: 272px;
+    padding-bottom: 206px;
+}
+
+.section-eyebrow {
+    font-family: var(--font-family-open-sans);
+    font-size: 11px;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.6);
+    font-weight: 600;
+    line-height: normal;
+    display: inline-flex;
+    align-items: center;
+}
+
+.section-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.6);
+    margin-right: 20px;
+}
+
+.hero-eyebrow {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-eyebrow::after {
+    content: '';
+    display: inline-block;
+}
+
+
+.hero-heading {
+    font-family: var(--font-family-raleway);
+    font-weight: 700;
+    font-size: 72px;
+    color: var(--color-white);
+    margin-top: 20px;
+    letter-spacing: 3.6px;
+}
+
+.hero-description {
+    font-family: var(--font-family-open-sans);
+    font-size: 18px;
+    letter-spacing: 0.36px;
+    color: var(--color-gray);
+    margin-top: 20px;
+}
+
+.section {
+    padding: 130px 0px;
+}
+
+.section-container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about {
+    padding: 94px 0px;
+}
+
+.services {
+    padding: 94px 0px;
+    background-color: var(--color-light-gray);
+}
+
+.our-barbers {
+    background-color: var(--color-light-gray-2);
+}
+
+.our-barbers-list {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+
+.our-barbers-item {
+    text-align: center;
+    width: calc( (100% - 60px) / 3 );
+}
+
+.our-barbers-position {
+    color: var(--color-orange);
+}
+
+.about img:first-child {
+    margin-right: 50px;
+    box-shadow: inset 0px 0px 5px 5px green;
+}
+
+.our-barbers-links {
+    list-style: none;
+    display: block;
+    justify-content: center;
+    font-size: 0px;
+    margin-top: 30px;
+}
+
+.our-barbers-links-item {
+    display: inline-block;
+}
+
+.our-barbers-links-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.our-barbers-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--color-white);
+    border-radius: 22px;
+}
+
+.our-barbers-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+.our-barbers-link:hover {
+    fill: var(--color-orange);
+}
+
+footer {
+    background-color: var(--color-black);
+    padding: 20px;
+}
+
+.footer-link {
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+}
+
+.footer-link:hover {
+    color: var(--color-orange);
+}
+
+.footer-link svg {
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+}

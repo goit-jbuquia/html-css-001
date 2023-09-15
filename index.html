@@ -52,7 +52,7 @@
             >
           </li>
           <li class="main-header-ctas-item">
-            <button class="main-header-cta" type="button">
+            <button class="main-header-cta" type="button" data-modal-open >
               Book a Service
             </button>
           </li>
@@ -85,7 +85,9 @@
       <section class="section about" id="about-section">
         <div class="section-container">
 
-          <img src="images/section-201.jpg" alt="" />
+          <div class="about-image">
+            <img src="images/section-201.jpg" alt="" />
+          </div>
 
           <img src="images/section-202.jpg" alt="" />
 
@@ -131,7 +133,12 @@
         <div class="section-container">
           <ul class="our-barbers-list">
             <li class="our-barbers-item">
-              <img src="images/sample.jpg" alt="">
+              <figure class="our-barbers-figure">
+                <img src="images/sample.jpg" alt="">
+                <figcaption>
+                  Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.
+                </figcaption>
+              </figure>
               <h3 class="our-barbers-name">John Smith</h3>
               <p class="our-barbers-position"><span>Extreme</span> <span>Barber</span></p>
               <ul class="our-barbers-links">
@@ -216,11 +223,22 @@
       
         <a href="#" class="footer-link">
           <svg>
-            <use href="images/icons.svg#phone" />
+            <use href="images/symbol-defs.svg#facebook" />
           </svg>
           +38 044 111 11 11
         </a>
       </div>
     </footer>
+
+    <div class="modal is-hidden" data-modal >
+      <div class="modal-content">
+        <button class="modal-close" data-modal-close>
+          <img src="images/close.svg" alt="">
+        </button>
+      </div>
+    </div>
+
+    <script src="js/modal.js"></script>
+
   </body>
 </html>
